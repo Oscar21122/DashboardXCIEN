@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* tokens shadcn mapeados al tema oscuro XCIEN */
+    --background: 156 16% 5%;
+    --foreground: 150 12% 91%;
+    --card: 156 14% 7%;
+    --card-foreground: 150 12% 91%;
+    --primary: 119 67% 54%;
+    --primary-foreground: 150 30% 6%;
+    --secondary: 156 12% 12%;
+    --secondary-foreground: 150 12% 91%;
+    --muted: 156 12% 12%;
+    --muted-foreground: 150 6% 63%;
+    --border: 150 8% 18%;
+    --input: 150 8% 18%;
+    --ring: 119 67% 54%;
+    --radius: 0.75rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+  body {
+    @apply bg-xbg text-txt font-sans;
+    font-size: 14px;
+    line-height: 1.45;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+  }
+  ::selection {
+    background: rgba(61, 214, 61, 0.25);
+  }
+}
+
+/* utilidades de scroll finas (como el diseño original) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+/* línea de umbral punteada reutilizable */
+.thr-line {
+  background: repeating-linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.6) 0 2px,
+    transparent 2px 4px
+  );
+}
