@@ -93,7 +93,7 @@ function Dashboard({ data }: { data: NetworkData }) {
               Capacidad de red metropolitana
             </h1>
             <p className="text-dim text-[13px] mt-1.5 m-0">
-              Saltillo · Anillo de fibra CWDM/OADM · G.8032 / MPLS-IP — vista administrativa de saturación
+              Saltillo · Anillo de fibra CWDM/OADM · MPLS-IP — vista administrativa de saturación
             </p>
           </div>
           <div className="flex gap-4 text-[12px] text-dim">

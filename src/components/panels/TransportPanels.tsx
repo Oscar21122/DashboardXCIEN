@@ -18,7 +18,7 @@ export function TransportPanels({ nodes, ring }: { nodes: NodeRow[]; ring: RingR
       </div>
       <div className="col-span-6 max-[1180px]:col-span-12">
         <Card>
-          <PanelHead kicker="Transporte · anillo" title="Utilización por enlace (G.8032 / MPLS-IP)" />
+          <PanelHead kicker="Transporte · anillo" title="Utilización por enlace (MPLS-IP)" />
           <CardContent>
             <BarList items={byLink} />
           </CardContent>
